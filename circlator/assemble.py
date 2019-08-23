@@ -83,6 +83,7 @@ class Assembler:
         cmd = [
             self.canu.exe(),
             '-useGrid=false',
+            'stopOnReadQuality=false', # TODO remove
             'gnuplotTested=true',
             '-assemble',
             'genomeSize='+str(float(self.genomeSize)/1000000)+'m',
