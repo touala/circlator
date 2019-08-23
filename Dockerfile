@@ -5,7 +5,7 @@ FROM debian:testing
 ENV   BUILD_DIR=/opt/circlator
 
 # Install the dependancies
-RUN   apt-get update -qq && apt-get install -y python python3-pip git wget unzip zlib1g-dev libncurses5-dev
+RUN   apt-get update -qq && apt-get install -y python python3-pip git wget unzip zlib1g-dev libncurses5-dev default-jre
 
 RUN   apt-get install --yes libbz2-dev liblzma-dev
 
